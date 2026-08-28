@@ -15,7 +15,7 @@ namespace CatalogosEmpleados.Servicios
 
         public async Task NotificarAlta(Empleados empleados)
         {
-            string destinatario = "r@gmail.com";
+            string destinatario = " ";
             string asunto = "Notificación: Nuevo Empleado Registrado";
             string mensaje = $@"
             <h2>Alta exitosa</h2>
@@ -32,7 +32,7 @@ namespace CatalogosEmpleados.Servicios
 
         public async Task NotificarModificacion(Empleados empleados)
         {
-            string destinatario = "j@gmail.com";
+            string destinatario = " ";
             string asunto = "Aviso: Datos de Empleado Actualizados";
             string mensaje = $@"
         <h2>Actualización exitosa</h2>
@@ -49,7 +49,7 @@ namespace CatalogosEmpleados.Servicios
 
         public async Task NotificarBaja(Empleados empleados)
         {
-            string destinatario = "r@gmail.com, in@gmail.com";
+            string destinatario = " ";
             string asunto = "Aviso: Baja de empleado";
             string mensaje = $@"
         <h2>Baja definitiva del sistema</h2>
